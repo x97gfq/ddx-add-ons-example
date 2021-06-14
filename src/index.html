@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Test page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="bellhop.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Test App</div>
+                <div class="panel-body">
+
+                    <img class="center-block" src="teeth.png" />
+
+                    <button class="btn btn-primary" onclick="Approve()">Approve</button>
+                    <button class="btn btn-danger" onclick="Reject()">Reject</button>
+                </div>
+            </div>              
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h5>Note:</h5>
+                    <textarea class="form-control" id="notes" rows="2" cols="30">the quick red fox jumped over the lazy brown dog</textarea>
+                    <br/>
+                    <button class="btn btn-warning" onclick="SaveNote(document.getElementById('notes').value)">Save Note</button>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="pull-right">
+                        <button class="btn btn-info" onclick="Close()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
